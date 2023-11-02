@@ -59,7 +59,7 @@ function select_slide_image (array_lenght,array_selected) {
 }
 
 
-select_slide_image(array_lenght,array_selected);
+
 
 console.log(array_selected);
 /*function génération des points */

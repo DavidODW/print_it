@@ -31,6 +31,7 @@ function select_slide_image (array_lenght,array_selected) {
 		}
 		dot_erase_function();
 		image_slide_function(array_selected);
+		text_slide_function(array_selected);
 		dot_slide_function(array_selected);
 		console.log('arro_left Clic gauche'+array_selected);
 
@@ -43,6 +44,7 @@ function select_slide_image (array_lenght,array_selected) {
 		}
 		dot_erase_function();
 		image_slide_function(array_selected);
+		text_slide_function(array_selected);
 		dot_slide_function(array_selected);
 		console.log('arrow_right Clic gauche'+array_selected);
 	});
@@ -81,4 +83,10 @@ function dot_erase_function() {
 function image_slide_function (array_selected){
 	let SliderImage = document.getElementById('slider_img');
 	SliderImage.src='./assets/images/slideshow/'+slides[array_selected].image
+}
+
+/* function pour changer le texte de l'image*/
+function text_slide_function (array_selected){
+	let SliderText = document.getElementById('slider_text');
+	SliderText.innerHTML=slides[array_selected].tagLine
 }

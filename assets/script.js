@@ -53,9 +53,10 @@ function select_slide_image (array_lenght,array_selected) {
 }
 
 
-select_slide_image(array_lenght,array_selected);
+select_slide_image(array_lenght,array_selected); /*j'appelle ma fonction*/
 
 console.log(array_selected);
+
 /*function génération des points */
 function dot_slide_function (array_selected){
 	let SliderContainerDot = document.getElementById('slider_dot_list');

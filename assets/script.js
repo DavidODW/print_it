@@ -28,8 +28,7 @@ function select_slide_image (array_lenght,array_selected) {
 		array_selected--;
 		if (array_selected<0){
 			array_selected=array_lenght- 1;
-		}
-		dot_erase_function();
+		}	
 		image_slide_function(array_selected);
 		text_slide_function(array_selected);
 		dot_slide_function(array_selected);
@@ -41,8 +40,7 @@ function select_slide_image (array_lenght,array_selected) {
 		array_selected++;
 		if (array_selected>=array_lenght){
 			array_selected=0;
-		}
-		dot_erase_function();
+		}	
 		image_slide_function(array_selected);
 		text_slide_function(array_selected);
 		dot_slide_function(array_selected);
@@ -59,6 +57,7 @@ console.log(array_selected);
 
 /*function génération des points */
 function dot_slide_function (array_selected){
+	dot_erase_function();
 	let SliderContainerDot = document.getElementById('slider_dot_list');
 	console.log(array_lenght);
 	for (i=0;i<array_lenght;i++){
